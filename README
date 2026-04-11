@@ -19,6 +19,10 @@ with matching names: NAME.gnu (your gnuplot script) and NAME.dat (your data in
 space-separated "x y" format). Run make from the base directory and the output will 
 appear in pdfs/.
 
+## Expected Output
+The expected output from the example/ directory is as follows:
+![Example Output](.example.png)
+
 ## Dependencies
 - gnuplot
 - pdflatex
