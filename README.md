@@ -1,6 +1,21 @@
 ## Overview
 A lightweight pipeline for generating publication-quality plots from gnuplot with consistent LaTeX formatting. Very useful for uniform plotting for collaborations/bigger projects.
 
+## Repository Layout
+.
+├── example/
+├── style/
+├── pdfs/
+├── fix.py
+├── Makefile
+
+- `example/`: Example directory showcasing a decaying oscillation plot.
+- `style/`: Stores shared gnuplot styles, terminals, and reusable plotting components. These are included by the Makefile but excluded from make clean.
+- `pdfs/`: Output directory for final PDFs.
+- `fix.py`: Post-processes gnuplot cairolatex LaTeX output to enforce consistent formatting across plots.
+- `Makefile`: Recursively searches subdirectories for matching .gnu and .dat file pairs and runs the full plotting pipeline.
+This structure is designed to make adding new plots as simple as dropping in a .gnu and .dat file pair.
+
 ## How It Works
 The MakeFile searches all subdirectories (that are not style and pdfs), looks for a pair of files: NAME.dat and NAME.gnu. These must share the same NAME. It is done this way so you can have special .gp files that house other gnuplot objects and they will be unaffected by make clean.
 
