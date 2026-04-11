@@ -21,7 +21,7 @@ appear in pdfs/.
 
 ## Expected Output
 The expected output from the example/ directory is as follows:
-![Example Output](.example.png)
+![Example Output](example.png)
 
 ## Dependencies
 - gnuplot
