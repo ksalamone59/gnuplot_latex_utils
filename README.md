@@ -2,13 +2,13 @@
 A lightweight pipeline for generating publication-quality plots from gnuplot with consistent LaTeX formatting. Very useful for uniform plotting for collaborations/bigger projects.
 
 ## Repository Layout
-.
+```plaintext
 ├── example/
 ├── style/
 ├── pdfs/
 ├── fix.py
 ├── Makefile
-
+```
 - `example/`: Example directory showcasing a decaying oscillation plot.
 - `style/`: Stores shared gnuplot styles, terminals, and reusable plotting components. These are included by the Makefile but excluded from make clean.
 - `pdfs/`: Output directory for final PDFs.
