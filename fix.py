@@ -48,6 +48,7 @@ with open(texfile, "w") as f:
         if r"\documentclass{minimal}" in line:
             f.write(line)
             f.write(r"\usepackage{xcolor}" + "\n")
+            f.write(r"\usepackage{amsmath}" + "\n")
             continue 
         # Make titles and labels bigger from pre processing
         if not fixed_title and title and title in line:
