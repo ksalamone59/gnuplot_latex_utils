@@ -36,10 +36,9 @@ appear in pdfs/.
 
 ## Expected Output
 The expected output from the example/ directory is as follows:
-    <!-- ![Example Output](example.png) -->
 <div align="center">
  <img src="example.png" width="750"> 
-"<div>
+<div>
 
 ## Dependencies
 - gnuplot
