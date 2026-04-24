@@ -38,7 +38,7 @@ appear in pdfs/.
 The expected output from the example/ directory is as follows:
 <div align="center">
  <img src="example.png" width="750"> 
-<div>
+</div>
 
 ## Dependencies
 - gnuplot
