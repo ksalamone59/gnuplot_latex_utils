@@ -76,8 +76,8 @@ with open(texfile, "w") as f:
         elif re.search(r"(10\^\{[^}]+\})", line) and not re.search(r"\$", line):
             line = re.sub(r"(10\^\{[^}]+\})", r"$\1$", line)
         # Make tic numbers bigger
-        elif re.search(r"\\put", line) and re.search(r"\\strut{}\$[-+]?(?:\d*\.\d+|\d+)\$", line):
-            line = re.sub(r'(\\strut{})\$\s*([-+]?(?:\d*\.\d+|\d+))\$', r'\1\\Large$\2$', line)
+        elif re.search(r"\\strut{}\$(.*?)\$", line):
+            line = re.sub(r'(\\strut{})\$(.*?)\$', r'\1\\Large$\2$', line)
         lastLine = line
         f.write(line)
 
