@@ -9,6 +9,8 @@ A lightweight pipeline for generating publication-quality plots from gnuplot wit
 ├── fix.py
 ├── make_directory.sh
 ├── Makefile
+├── requirements.txt
+├── LICENSE
 ```
 - `example/`: Example directory showcasing a decaying oscillation plot.
 - `style/`: Stores shared gnuplot styles, terminals, and reusable plotting components. These are included by the Makefile but excluded from make clean.
@@ -17,6 +19,8 @@ A lightweight pipeline for generating publication-quality plots from gnuplot wit
 - `make_directory.sh`: Simple bash script that creates a .gnu file in the right format with some standard lines added automatically.
 - `Makefile`: Recursively searches subdirectories for matching .gnu and .dat file pairs and runs the full plotting pipeline.
 This structure is designed to make adding new plots as simple as dropping in a .gnu and .dat file pair.
+- `LICENSE`: MIT License for this repo 
+- `requirements.txt`: requirements for this repository in python. Can run `pip install requirements.txt` for simplicity.
 
 ## How It Works
 The MakeFile searches all subdirectories (that are not style and pdfs), looks for a pair of files: NAME.dat and NAME.gnu. These do not need to share the same NAME, but it is highly recommended. It is done this way so you can have special .gp files that house other gnuplot objects and they will be unaffected by make clean.
