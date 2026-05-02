@@ -1,4 +1,4 @@
-## Overview
+# Overview
 A lightweight pipeline for generating publication-quality plots from gnuplot with consistent LaTeX formatting. Very useful for uniform plotting for collaborations/bigger projects.
 
 ## Repository Layout
